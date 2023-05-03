@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*
+{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+a
+{
+	text-decoration: none;
+
+}
+	
+.hero
+{
+		width: 100%;
+		height: 100vh;
+		background-size: cover;
+}
+
+nav
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 30px 100px;
+}
+
+.logo
+{
+	max-height: 60px;
+}
+
+nav ul li
+{
+	list-style: none;
+	display: inline-block;
+	padding: 10px 20px;
+}
+
+nav ul li a
+{
+	color: #1d1d24;
+	position: relative;
+	padding: 5px 0;
+}
+	
+nav ul li a:hover
+{
+	color: red;
+}
+
+nav ul li a:after
+{
+	content:"";
+	position: absolute;
+	left: 0;
+	width: 0%;
+	height: 3px;
+	background: #fd4766;
+	transition: .3s;
+	bottom:0;
+}
+
+nav ul li a:hover:after
+{
+	width:100%;
+}
+
+.btn
+{
+	color:#fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 16px 40px;
+	border-radius: 500px;
+	display:inline-block;
+	font-weight: 500;
+	transition: all .4s ease-in-ut;
+	background-size: 152% 100%;
+	background: #fd4766;
+	border: 2px solid #fd4766;
+}
+
+.btn.hover
+{
+	background: transparent;
+	border-color: #fd4766;
+	color:  #fd4766;
+}
+
+.content
+{
+	position: absolute;
+	top: 35%;
+	left: 8%;
+}
+</style>
+</head>
+<body>
+
+	<div class="hero">
+	
+	<nav>
+		<img src="logo1.jpg" class="logo">
+		<ul>
+			<li><a href="Nurul Syazwani_2021899936.html">HOME</a></li>
+			<li><a href="biography.html">BIOGRAPHY</a></li>
+			<li><a href="timetable.html">TIMETABLE</a></li>
+			<li><a href="resume.html">RESUME</a></li>
+			<li><a href="gallery.html">GALLERY</a></li>
+			<li><a href="links.html">LINKS</a></li>
+			<li><a href="follow.html">FOLLOW ME</a></li>
+		</ul>
+		
+		<a href="login.html" class="btn">LOGIN</a>
+	</nav>
+
+<h2>Login Form</h2>
+
+<form action="/action_page.php" method="post">
+ 
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+	<button type="submit" class="signupbtn"><a href="signup.html">Sign Up</a></button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+
+</body>
+</html>
